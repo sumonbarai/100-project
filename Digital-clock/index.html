@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      @font-face {
+        font-family: digitalClock;
+        src: url("./fonts/digital-7.ttf");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #223750;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .clock {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #time {
+        font-family: digitalClock;
+        font-size: 120px;
+        padding: 25px;
+      }
+      #date {
+        font-family: digitalClock;
+        font-size: 80px;
+        padding: 15px;
+      }
+      /* responsive media query */
+      @media screen and (max-width: 720px) {
+        #time {
+          font-size: 100px;
+          padding: 25px;
+        }
+        #date {
+          font-size: 60px;
+          padding: 15px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        #time {
+          font-size: 80px;
+          padding: 25px;
+        }
+        #date {
+          font-size: 40px;
+          padding: 15px;
+        }
+      }
+
+      @media screen and (max-width: 355px) {
+        #time {
+          font-size: 60px;
+          padding: 20px;
+        }
+        #date {
+          font-size: 30px;
+          padding: 11px;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        #time {
+          font-size: 40px;
+          padding: 20px;
+        }
+        #date {
+          font-size: 25px;
+          padding: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body onload="showTime()">
+    <div class="clock">
+      <div id="time"></div>
+      <div id="date">Fri, 17 september 2023</div>
+    </div>
+    <script>
+      const timeElement = document.getElementById("time");
+      const dateElement = document.getElementById("date");
+
+      const showTime = function () {
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+        let year = now.getFullYear();
+        let month = months[now.getMonth()];
+        let date = now.getDate();
+        let day = days[now.getDay()];
+        let session = "am";
+        if (hours >= 12) {
+          session = "pm";
+        }
+        if (hours > 12) {
+          hours = hours - 12;
+        }
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        const time = `${hours}:${minutes}:${seconds} ${session}`;
+        const dateFormate = `${day}, ${date} ${month} ${year}`;
+        timeElement.innerText = time;
+        dateElement.innerText = dateFormate;
+      };
+
+      setInterval(() => {
+        showTime();
+      }, 1000);
+    </script>
+  </body>
+</html>

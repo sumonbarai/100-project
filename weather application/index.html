@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="input-text">
+        <input id="input-text" type="text" placeholder="Type any city name" />
+      </div>
+      <div class="weather" id="weather">
+        <div id="logo"><img src="./images/sun.png" alt="logo" /></div>
+        <div id="city-name">Dhaka</div>
+        <div id="date">Sunday,23 january, 2023</div>
+        <div>
+          <span id="temperature">22.9</span>
+          <span class="celcius" id="celcius">&#8451;</span>
+        </div>
+        <div id="status">Sunny</div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
