@@ -29,14 +29,14 @@ body {
   z-index: -1;
 }
 .input-text {
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 .input-text input {
   margin-top: 20rem;
   width: 100%;
   font-size: 1.8rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 1rem;
   border: transparent;
 }
@@ -81,6 +81,16 @@ body {
 @media screen and (max-width: 720px) {
   html {
     font-size: 45.5%;
+  }
+  .input-text {
+    width: 80%;
+    margin: auto;
+  }
+  .input-text input {
+    margin-top: 15rem;
+    width: 100%;
+    font-size: 3rem;
+    padding: 2.5rem 2rem;
   }
 }
 @media screen and (max-width: 480px) {
