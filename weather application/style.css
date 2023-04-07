@@ -77,3 +77,19 @@ body {
   font-size: 1.8rem;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 39.5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 28.5%;
+  }
+}

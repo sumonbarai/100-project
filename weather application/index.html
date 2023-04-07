@@ -13,20 +13,24 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="defaultCity()">
     <div class="main">
       <div class="input-text">
-        <input id="input-text" type="text" placeholder="Type any city name" />
+        <input
+          id="input-text"
+          type="text"
+          placeholder="Type any valid city name"
+        />
       </div>
       <div class="weather" id="weather">
         <div id="logo"><img src="./images/sun.png" alt="logo" /></div>
-        <div id="city-name">Dhaka</div>
-        <div id="date">Sunday,23 january, 2023</div>
+        <div id="city-name"></div>
+        <div id="date"></div>
         <div>
-          <span id="temperature">22.9</span>
-          <span class="celcius" id="celcius">&#8451;</span>
+          <span id="temperature"></span>
+          <span class="celcius" id="celcius"></span>
         </div>
-        <div id="status">Sunny</div>
+        <div id="status"></div>
       </div>
     </div>
 
