@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f2f7;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.container label {
+  display: block;
+  margin: 10px 0;
+}
+.container .text-content {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  position: relative;
+}
+.container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.container button {
+  padding: 5px 13px;
+  background-color: #5c81dc;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.container button::before {
+  content: "copied";
+  background-color: #5c81dc;
+  border-radius: 5px;
+  position: absolute;
+  top: -45px;
+  right: 5px;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.container button::after {
+  content: "";
+  background-color: #5c81dc;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -19px;
+  right: 23px;
+  transform: rotate(46deg);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.container button:active {
+  background-color: #a4b2d6;
+}
+
+.container button.active::after,
+.container button.active::before {
+  opacity: 1;
+}
