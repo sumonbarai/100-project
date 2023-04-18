@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangla Clock</title>
+    <style>
+      @font-face {
+        font-family: digitalClock;
+        src: url("./fonts/digital-7.ttf");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #223750;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .clock {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #time {
+        font-family: digitalClock;
+        font-size: 120px;
+        padding: 25px;
+      }
+      #date {
+        font-family: digitalClock;
+        font-size: 80px;
+        padding: 15px;
+      }
+      /* responsive media query */
+      @media screen and (max-width: 720px) {
+        #time {
+          font-size: 100px;
+          padding: 25px;
+        }
+        #date {
+          font-size: 60px;
+          padding: 15px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        #time {
+          font-size: 65px;
+          padding: 17px;
+        }
+        #date {
+          font-size: 40px;
+          padding: 15px;
+        }
+      }
+
+      @media screen and (max-width: 355px) {
+        #time {
+          font-size: 60px;
+          padding: 17px;
+        }
+        #date {
+          font-size: 30px;
+          padding: 11px;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        #time {
+          font-size: 40px;
+          padding: 17px;
+        }
+        #date {
+          font-size: 25px;
+          padding: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body onload="showTime()">
+    <div class="clock">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+    <script>
+      const timeElement = document.getElementById("time");
+      const dateElement = document.getElementById("date");
+
+      const showTime = function () {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString("bn-bd");
+        const time = timeString.slice(0, -2);
+        const period = timeString.slice(-2) === "PM" ? "অপরাহ্ণ" : "পূর্বাহ্ণ";
+        const date = now.toLocaleDateString("bn-bd");
+        timeElement.innerText = time + period;
+        dateElement.innerText = "তারিখ:-" + date;
+      };
+
+      setInterval(() => {
+        showTime();
+      }, 1000);
+    </script>
+  </body>
+</html>
