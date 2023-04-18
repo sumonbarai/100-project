@@ -1,0 +1,79 @@
+/* fonts set up */
+@font-face {
+  font-family: digitalClock;
+  src: url("./fonts/digital-7.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: digitalClock;
+  background-color: #223750;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.clock {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#time {
+  font-size: 120px;
+  padding: 25px;
+}
+#date {
+  font-size: 80px;
+  padding: 15px;
+}
+/* responsive media query */
+@media screen and (max-width: 720px) {
+  #time {
+    font-size: 100px;
+    padding: 25px;
+  }
+  #date {
+    font-size: 60px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #time {
+    font-size: 65px;
+    padding: 17px;
+  }
+  #date {
+    font-size: 40px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  #time {
+    font-size: 60px;
+    padding: 17px;
+  }
+  #date {
+    font-size: 30px;
+    padding: 11px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #time {
+    font-size: 40px;
+    padding: 17px;
+  }
+  #date {
+    font-size: 25px;
+    padding: 11px;
+  }
+}
