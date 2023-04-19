@@ -1,0 +1,58 @@
+/* popins fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c8d6e5;
+  font-family: "Poppins", sans-serif;
+}
+.counter-parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  max-width: 600px;
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+  border-radius: 20px;
+  background: #c8d6e5;
+  box-shadow: 5px 5px 10px #b6c3d0, -5px -5px 10px #dae9fa;
+}
+#result {
+  font-size: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 114px;
+  background: #c8d6e5;
+  box-shadow: 5px 5px 10px #b6c3d0, -5px -5px 10px #dae9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.counter-all-button button {
+  border: none;
+  border-radius: 114px;
+  background: #c8d6e5;
+  box-shadow: 5px 5px 10px #b6c3d0, -5px -5px 10px #dae9fa;
+  padding: 10px;
+  margin: 5px;
+  color: #49573a;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.counter-all-button button:focus {
+  background-color: red;
+  color: #fff;
+}
