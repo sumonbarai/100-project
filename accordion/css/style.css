@@ -1,0 +1,60 @@
+/* popins fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #dcdde1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.container {
+  width: 60rem;
+}
+.container h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+.accordion {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.accordion-title {
+  padding: 1rem 0;
+}
+.accordion-details {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+.title-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-angle-right {
+  transition: transform 0.3s ease;
+}
+.active {
+  max-height: 300px;
+  overflow: auto;
+}

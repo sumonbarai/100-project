@@ -1,0 +1,67 @@
+/* popins fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #293860;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.container {
+  background-color: #f5f6fa;
+  width: 50rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+.container .title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+.container .question {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.container .answer button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #dcdde1;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease;
+}
+.container .answer button:hover {
+  background-color: #293860;
+  color: #fff;
+}
+.container .button {
+  text-align: end;
+}
+.container .next-btn {
+  width: 8rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #293860;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
