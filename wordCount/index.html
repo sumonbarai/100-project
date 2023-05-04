@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Count</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Word Counter Application</h2>
+      <div class="input-field">
+        <textarea id="inputText"></textarea>
+        <p id="errorMessage">
+          if you want to remove one world Please double click in input area
+        </p>
+      </div>
+      <div class="output">
+        <div class="output-child" id="character">Character : 0</div>
+        <div class="output-child" id="word">word : 0</div>
+        <div class="output-child" id="word-left">word-left : 10</div>
+        <div class="output-child" id="reading-time">reading-time : 0 sec</div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
