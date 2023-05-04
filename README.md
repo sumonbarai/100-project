@@ -7,3 +7,5 @@
 5. water boiling calculator: [live](https://water-boiling-calculator.netlify.app/)
 6. My clock : [live](https://mydigital-clock2023.netlify.app/)
 7. counter : [live](https://mycounter-application.netlify.app/)
+8. accordion : [live](https://my-accordion-site.netlify.app/)
+9. word count : [live](https://word-count-site.netlify.app/)
