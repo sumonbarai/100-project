@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c8d6e5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-area {
+  background-color: black;
+  color: #fff;
+  padding: 50px;
+  width: 500px;
+  text-align: center;
+  border-radius: 20px;
+}
+.time-area {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 60px;
+}
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+.btn:focus {
+  background-color: red;
+  color: #fff;
+}
+
+button[disabled="true"] {
+  background-color: orange;
+}
