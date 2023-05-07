@@ -9,3 +9,4 @@
 7. counter : [live](https://mycounter-application.netlify.app/)
 8. accordion : [live](https://my-accordion-site.netlify.app/)
 9. word count : [live](https://word-count-site.netlify.app/)
+10. stop watch : [live](https://my-stop-watchs.netlify.app/)

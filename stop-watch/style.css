@@ -10,26 +10,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.container h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
 
 .watch-area {
   background-color: black;
-  color: #fff;
-  padding: 50px;
+  margin: 10px;
+  padding: 40px;
   width: 500px;
+  color: #fff;
   text-align: center;
   border-radius: 20px;
 }
+
 .time-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
-  font-size: 60px;
+  font-size: 50px;
 }
 .btn {
   padding: 5px 10px;
@@ -46,4 +53,19 @@ body {
 
 button[disabled="true"] {
   background-color: orange;
+}
+/* responsive media query */
+@media screen and (max-width: 400px) {
+  .container h1 {
+    font-size: 25px;
+  }
+  .watch-area {
+    margin: 10px;
+    padding: 30px 20px;
+    width: 500px;
+  }
+  .time-area {
+    padding: 10px;
+    font-size: 30px;
+  }
 }
