@@ -20,22 +20,22 @@ pauseBtn.addEventListener("click", pauseTime);
 resetBtn.addEventListener("click", resetTime);
 
 // function declaration
-function displayTime() {
-  ms = ms + 10;
+function displayTime(initial) {
+  ms = ms + initial;
   if (ms === 1000) {
     s++;
     ms = 0;
-    if (s === 60) {
-      m++;
-      s = 0;
-      if (m === 60) {
-        h++;
-        m = 0;
-      }
-    }
   }
+  if (s === 60) {
+    m++;
+    s = 0;
+  }
+  if (m === 60) {
+    h++;
+    m = 0;
+  }
+  const millisecond = ms < 10 ? "00" + ms : ms < 100 ? "0" + ms : ms;
 
-  const millisecond = ms < 100 ? "0" + ms : ms;
   const second = s < 10 ? "0" + s : s;
   const minutes = m < 10 ? "0" + m : m;
   const hours = h < 10 ? "0" + h : h;
@@ -47,7 +47,7 @@ function displayTime() {
   hour.innerHTML = hours;
 }
 function startTime() {
-  timerId = setInterval(displayTime, 10);
+  timerId = setInterval(displayTime, 10, 10);
   startBtn.setAttribute("disabled", "true");
 }
 
