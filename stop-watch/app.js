@@ -41,7 +41,7 @@ function displayTime(initial) {
   const hours = h < 10 ? "0" + h : h;
 
   // dom update
-  millsec.innerHTML = millisecond;
+  millsec.innerHTML = millisecond.toString().slice(0, 2);
   sec.innerHTML = second;
   mins.innerHTML = minutes;
   hour.innerHTML = hours;
@@ -64,7 +64,7 @@ function resetTime() {
   s = 0;
   ms = 0;
 
-  millsec.innerHTML = "000";
+  millsec.innerHTML = "00";
   sec.innerHTML = "00";
   mins.innerHTML = "00";
   hour.innerHTML = "00";
