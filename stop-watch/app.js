@@ -20,21 +20,19 @@ pauseBtn.addEventListener("click", pauseTime);
 resetBtn.addEventListener("click", resetTime);
 
 // function declaration
-function displayTime(initialTime) {
-  ms = ms + initialTime;
+function displayTime() {
+  ms = ms + 10;
   if (ms === 1000) {
     s++;
     ms = 0;
-  }
-
-  if (s === 60) {
-    m++;
-    s = 0;
-  }
-
-  if (m === 60) {
-    h++;
-    m = 0;
+    if (s === 60) {
+      m++;
+      s = 0;
+      if (m === 60) {
+        h++;
+        m = 0;
+      }
+    }
   }
 
   const millisecond = ms < 100 ? "0" + ms : ms;
@@ -42,13 +40,14 @@ function displayTime(initialTime) {
   const minutes = m < 10 ? "0" + m : m;
   const hours = h < 10 ? "0" + h : h;
 
+  // dom update
   millsec.innerHTML = millisecond;
   sec.innerHTML = second;
   mins.innerHTML = minutes;
   hour.innerHTML = hours;
 }
 function startTime() {
-  timerId = setInterval(displayTime, 10, 10);
+  timerId = setInterval(displayTime, 10);
   startBtn.setAttribute("disabled", "true");
 }
 
