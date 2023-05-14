@@ -4,7 +4,7 @@ const btn = document.getElementById("btn");
 
 const defaultPassword = 12345;
 let passwordMatch = false;
-let moving = true;
+let moving = false;
 
 // eventListener
 inputField.addEventListener("input", passwordUpdate);
