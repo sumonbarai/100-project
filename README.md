@@ -11,3 +11,4 @@
 9. word count : [live](https://word-count-site.netlify.app/)
 10. stop watch : [live](https://my-stop-watchs.netlify.app/)
 11. funny login form : [live](https://funnylogin.netlify.app/)
+12. password-generator : [live](https://password-generator-maker.netlify.app/)
