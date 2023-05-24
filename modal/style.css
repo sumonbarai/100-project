@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-btn {
+  background-color: #30336b;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#modal-btn:focus {
+  background-color: rebeccapurple;
+}
+
+/* modal css */
+.modal-container {
+  background-color: rgba(83, 92, 104, 0.596);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: visibility 0.1s ease-in-out;
+}
+.modal-content #modal-close {
+  background-color: #30336b;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #95afc0;
+  min-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+.modal-content form label {
+  text-transform: capitalize;
+}
+.modal-content form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.modal-content form button {
+  background-color: #30336b;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.model-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.model-show {
+  opacity: 1;
+  visibility: visible;
+}
