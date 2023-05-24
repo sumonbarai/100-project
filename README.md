@@ -14,3 +14,5 @@
 12. password-generator : [live](https://password-generator-maker.netlify.app/)
 13. recipe app : [live](https://food-application-bd.netlify.app/)
 14. movie app : [live](https://practisemovieapi.netlify.app/)
+15. modal box : [live](https://mymodal-box.netlify.app/)
+16. moving box : [live](https://moving-box.netlify.app/)
