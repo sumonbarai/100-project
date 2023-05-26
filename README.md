@@ -16,3 +16,4 @@
 14. movie app : [live](https://practisemovieapi.netlify.app/)
 15. modal box : [live](https://mymodal-box.netlify.app/)
 16. moving box : [live](https://moving-box.netlify.app/)
+17. simple calculator: [live](https://general-calculator.netlify.app/)
