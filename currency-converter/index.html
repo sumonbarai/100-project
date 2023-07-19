@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d8ce62a5b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>simple Currency Converter</h2>
+      <div class="currency-area">
+        <div>
+          <div class="exchange-rate">
+            <h5>Exchange Rate</h5>
+            <span>1USD = 10GBP</span>
+          </div>
+
+          <div class="rate-display">
+            <div class="icon-indicator">
+              <div>form</div>
+              <div>to</div>
+            </div>
+            <div class="rate-convert-area">
+              <div class="rate-box">
+                <div class="select-option">
+                  <img
+                    src="https://www.worldometers.info/img/flags/uk-flag.gif"
+                    width="30"
+                    alt=""
+                  />
+                  <select id="currencyFrom">
+                    <option value="AED">AED</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD" selected>USD</option>
+                  </select>
+                </div>
+                <input type="number" />
+              </div>
+              <div class="rate-box">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <div class="rate-box">
+                <div class="select-option">
+                  <img
+                    src="https://www.worldometers.info/img/flags/uk-flag.gif"
+                    width="30"
+                    alt=""
+                  />
+                  <select id="currencyTo">
+                    <option value="AED">AED</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP" selected>GBP</option>
+                    <option value="USD">USD</option>
+                  </select>
+                </div>
+                <input type="number" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
