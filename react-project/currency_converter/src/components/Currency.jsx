@@ -17,6 +17,13 @@ const Currency = () => {
   useEffect(() => {
     setIsLoading(true);
     const url = `https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`;
+
+    if (amount < 0) {
+      window.alert("currency can't be negative value");
+      setIsLoading(false);
+      return;
+    }
+
     if (from === to) {
       window.alert("Both Converted Currency is same ");
       setIsLoading(false);
