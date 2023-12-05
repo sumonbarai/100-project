@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "samsung", "stock": 10, "price": 5000 },
+  { "id": 2, "name": "Nokia", "stock": 15, "price": 1000 },
+  { "id": 3, "name": "i-phone", "stock": 3, "price": 8000 },
+  { "id": 4, "name": "vivo", "stock": 20, "price": 9000 },
+  { "id": 5, "name": "oppo", "stock": 12, "price": 5000 },
+  { "id": 6, "name": "symphony", "stock": 30, "price": 3000 }
+]

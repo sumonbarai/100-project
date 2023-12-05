@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid black;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.table-header {
+  background-color: #d1d1d1;
+}
+
+td button {
+  background-color: #d1d1d1;
+  margin: 0 2px;
+}
+
+table > tr:nth-child(2n):hover {
+  background-color: #d1d1d177;
+  cursor: none;
+}
+
+td button[disabled] {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.219) !important;
+}
+
+h1 {
+  font-size: 35px !important;
+}
