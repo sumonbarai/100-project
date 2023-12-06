@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+input {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.btn-group button {
+  margin: 2px;
+  background-color: green;
+  color: #fff;
+}
