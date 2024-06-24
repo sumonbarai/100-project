@@ -76,13 +76,19 @@
     <!-- content area -->
     <h3 class="text-center text-5xl p-6 capitalize">Latest Recipes</h3>
     <!-- spinier -->
-    <div class="flex h-[50vh] w-full" id="spinner">
+    <div class="flex h-[50vh] w-full hidden" id="spinner">
       <div class="spinner m-auto"></div>
     </div>
+
+    <!-- foodDisplayContainer -->
     <div
       class="container px-3 pb-5 grid gap-5 lg:grid-cols-4 md:grid-cols-2 mx-auto"
       id="foodDisplayContainer"
-    ></div>
+    >
+      <!-- card area start-->
+
+      <!-- card area end-->
+    </div>
     <!-- footer area -->
     <footer class="bg-neutral">
       <div class="p-4 container mx-auto text-white flex justify-between">
@@ -132,13 +138,17 @@
     </footer>
 
     <!-- top to button -->
-    <div id="topToBtn"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
+    <div id="topToBtn">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
 
     <!-- modal part -->
     <input type="checkbox" id="my-modal-6" class="modal-toggle" />
     <div class="modal modal-bottom sm:modal-middle">
       <div class="modal-box w-11/12 max-w-5xl">
-        <div id="modal-info"></div>
+        <div id="modal-info">
+          <!-- modal data -->
+        </div>
         <div class="modal-action">
           <label for="my-modal-6" class="btn btn-warning text-white"
             >close</label
@@ -146,6 +156,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

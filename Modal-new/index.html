@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="btn" onclick="openModal()">Open</button>
+
+    <div id="modal-container">
+      <div id="modal01">
+        <div id="closeBtn" onclick="closeModal()">X</div>
+        <h2>Delete Account</h2>
+        <p>Are you sure you want to delete your account?</p>
+        <div>
+          <button class="btn" onclick="closeModal()">cancel</button>
+          <button class="btn">Delete</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
