@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Topnav</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onresize="screenResize()">
+    <header id="header-section">
+      <div class="container">
+        <nav class="topNav" id="topNav">
+          <div class="log">Logo</div>
+          <div class="navbar-toggler" onclick="toggler()">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="nav-items" id="nav-items">
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">blog</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>this is heading tag</h1>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
