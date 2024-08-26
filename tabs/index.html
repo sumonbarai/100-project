@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tab-area">
+      <h1>Tabs</h1>
+      <div class="tab-btn">
+        <button class="active" onclick="openTab(event,'one')">one</button>
+        <button onclick="openTab(event,'two')">two</button>
+        <button onclick="openTab(event,'three')">three</button>
+      </div>
+
+      <div class="tab-content active-content" id="one">
+        <div>
+          <h4>tab one</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
+            quas itaque soluta enim, porro nemo sapiente fugiat error quae
+            corporis dolore labore illum quasi veritatis est consequuntur quos
+            ab.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="two">
+        <div>
+          <h4>tab two</h4>
+          <p>
+            Caden Tellier was taken to a hospital in critical condition after a
+            head injury in John T. Morgan Academy’s game against visiting
+            Southern Academy, officials said Friday night, and his death was
+            announced the next day.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="three">
+        <div>
+          <h4>tab three</h4>
+          <p>
+            “Our boy, Caden Tellier has met Jesus face to face,” Tellier’s
+            parents said Saturday in a statement. “Everyone who knows Caden has
+            known kindness, generosity and love, and true to his nature, he is
+            giving of himself one more time. “﻿Lives have been touched by the
+            way he lived and now lives will be saved through his passing.”
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

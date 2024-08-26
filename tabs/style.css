@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.tab-area {
+  width: 50%;
+  height: 200px;
+}
+
+.tab-btn {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.tab-btn button {
+  background-color: inherit;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.tab-btn button:hover {
+  background-color: #ddd;
+}
+
+.tab-btn button.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.active-content {
+  display: block;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
