@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.sideNav {
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 1s ease;
+}
+
+.sideNav a {
+  text-decoration: none;
+  display: block;
+  padding: 0 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.sideNav a:hover {
+  color: #ddd;
+}
+
+.toggler-btn i {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
+  cursor: pointer;
+}
+.sideNav:hover .toggler-btn i {
+  display: block;
+}
+.main {
+  background-color: #d1d1d1;
+  margin-left: 200px;
+  transition: margin-left 1s ease;
+}
+.hero-area,
+.about-area,
+.service-area,
+.blog-area {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hero-area {
+  background-color: olivedrab;
+}
+
+.about-area {
+  background-color: rgb(142, 140, 35);
+}
+.service-area {
+  background-color: rgb(35, 138, 142);
+}
+.blog-area {
+  background-color: rgb(142, 74, 35);
+}

@@ -1,5 +1,7 @@
 function openTab(event, id) {
   const allBtn = event.target.parentElement.children;
+
+  console.log(allBtn);
   const currentBtn = event.currentTarget;
   const allContent = document.querySelectorAll(".tab-content");
   const currentTabContent = document.getElementById(id);
