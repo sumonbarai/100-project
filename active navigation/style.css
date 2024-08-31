@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+header {
+  background-color: black;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-decoration: none;
+}
+header nav a.active,
+header nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
