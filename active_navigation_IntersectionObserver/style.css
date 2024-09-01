@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkcyan;
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  border-bottom: 5px solid transparent;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.nav a:hover {
+  border-bottom: 5px solid red;
+  border-radius: 10px;
+}
+
+a.active {
+  border-bottom: 5px solid red;
+  border-radius: 10px;
+}
+
+.section {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#home {
+  background-color: orangered;
+}
+#about {
+  background-color: rgb(161, 107, 87);
+}
+#products {
+  background-color: rgb(51, 255, 0);
+}
+#collections {
+  background-color: rgb(221, 132, 99);
+}
+#blogs {
+  background-color: rgb(183, 0, 255);
+}
